@@ -12,6 +12,8 @@ public class RotateUnlessPlayerHit : MonoBehaviour
 
     private float lastFireTime = 0f;          // Time when the cannon last fired
 
+    private bool targetLocked = false;
+
     void FixedUpdate()
     {
         // Perform a raycast from the cannon's forward direction
@@ -31,13 +33,16 @@ public class RotateUnlessPlayerHit : MonoBehaviour
                     FireCannonball();
                     lastFireTime = Time.time; // Update the last fire time
                 }
-
+                targetLocked = true;
                 return; // Stop rotating if the cannon is aligned with the player
             }
+            else if (!targetLocked)
+            {
+                // Rotate the cannon if not aligned with the player
+                transform.Rotate(0, spinSpeed * Time.deltaTime, 0);
+            }
         }
-
-        // Rotate the cannon if not aligned with the player
-        transform.Rotate(0, spinSpeed * Time.deltaTime, 0);
+        
     }
 
     void FireCannonball()
