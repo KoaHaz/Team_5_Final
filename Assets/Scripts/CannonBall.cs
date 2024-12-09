@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Cannonball : MonoBehaviour
 {
-    private Cannonball firingCannon;  // The cannon that fired this cannonball
+    private RotateUnlessPlayerHit firingCannon;  // The cannon that fired this cannonball
     public float lifespan = 5f;   // Destroy the cannonball after this time
 
     void Start()
@@ -11,9 +11,9 @@ public class Cannonball : MonoBehaviour
         Destroy(gameObject, lifespan);
     }
 
-    public void SetFiringCannon(Cannonball Cannon)
+    public void SetFiringCannon(RotateUnlessPlayerHit cannon)
     {
-        firingCannon = Cannon;
+        firingCannon = cannon;
     }
 
     void OnTriggerEnter(Collider other)
@@ -27,7 +27,7 @@ public class Cannonball : MonoBehaviour
                 GameObject player = GameObject.FindGameObjectWithTag("Player");
                 if (player != null)
                 {
-                    //firingCannon.TeleportPlayer(player);
+                    player.transform.position = firingCannon.transform.position;  // Teleport to cannon
                 }
             }
 
