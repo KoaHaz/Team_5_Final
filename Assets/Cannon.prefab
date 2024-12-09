@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6853563495946844413}
-  - component: {fileID: 536983237519933659}
   - component: {fileID: 8579044631915921479}
   - component: {fileID: 52721527829961132}
+  - component: {fileID: 5738356428635926053}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -36,20 +36,6 @@ Transform:
   - {fileID: 1151404371238540475}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &536983237519933659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 885006195275650601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64566d70f546b0e458ed1ee28cd62e3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  spinSpeed: 90
 --- !u!82 &8579044631915921479
 AudioSource:
   m_ObjectHideFlags: 0
@@ -242,6 +228,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5738356428635926053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885006195275650601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4e6e142a51c7d47bbbf5b3dd3f3b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  cannonballPrefab: {fileID: 7977630281660470922, guid: 6b7390953330eea44a00a280a3d90613, type: 3}
+  firePoint: {fileID: 1658275461794036770}
+  spinSpeed: 45
+  projectileSpeed: 20
+  fireCooldown: 2
 --- !u!1 &3160925998168097574
 GameObject:
   m_ObjectHideFlags: 0
