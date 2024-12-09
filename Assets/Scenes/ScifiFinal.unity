@@ -21165,6 +21165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spear5
       objectReference: {fileID: 0}
+    - target: {fileID: 1292777839168208, guid: 52bc0bf00f0416144b5a879cd1aaf2d3, type: 3}
+      propertyPath: m_TagString
+      value: PlayerWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 4511286395316676, guid: 52bc0bf00f0416144b5a879cd1aaf2d3, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.19999993
