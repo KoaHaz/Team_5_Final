@@ -5,6 +5,7 @@ using EzySlice;
 using UnityEngine.InputSystem;
 using System.Threading;
 using JetBrains.Annotations;
+using UnityEngine.XR.Interaction.Toolkit;
 public class SlicingObjects : MonoBehaviour
 {
     public Transform startSlicePoint;
@@ -19,6 +20,7 @@ public class SlicingObjects : MonoBehaviour
     void Start()
     {
         timer = interval;
+        XRGrabInteractable grabbale = GetComponent<XRGrabInteractable>();
     }
 
     // Update is called once per frame
