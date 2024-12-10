@@ -3,13 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
 <<<<<<< HEAD
-  - Left Hand
-  - Right Hand
 =======
-  - PlayerWeapon
 >>>>>>> 282e3226b829239bde89149ead2c53dc8fdc0d91
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -17,9 +14,9 @@ TagManager:
   - 
   - Water
   - UI
-  - player
-  - Interactable
-  - Sliceable
+  - 
+  - 
+  - 
   - 
   - 
   - 
