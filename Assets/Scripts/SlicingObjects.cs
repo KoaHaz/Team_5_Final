@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 using System.Threading;
 using JetBrains.Annotations;
 using UnityEngine.XR.Interaction.Toolkit;
+using Unity.XR.CoreUtils.Datums;
 public class SlicingObjects : MonoBehaviour
 {
     public Transform startSlicePoint;
@@ -15,6 +16,7 @@ public class SlicingObjects : MonoBehaviour
     public Material crossSectionMaterial;
     public float cutForce = 2000;
     public float interval = 0.5f;
+    
     private float timer;
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,7 @@ public class SlicingObjects : MonoBehaviour
     void FixedUpdate()
     {
         timer -= Time.deltaTime;
+       
         bool hasHit = Physics.Linecast(startSlicePoint.position, endSlicePoint.position, out RaycastHit hit, sliceableLayer);
 
         if (hasHit && (timer <= 0))
@@ -35,6 +38,8 @@ public class SlicingObjects : MonoBehaviour
             Slice(target);
             timer = interval;
         }
+    
+
     }
 
     public void Slice(GameObject target)
@@ -69,6 +74,7 @@ public class SlicingObjects : MonoBehaviour
         collider.convex = true;
         rb.AddExplosionForce(cutForce, slicedObject.transform.position, 1);
 
+        Destroy(slicedObject, 3f);
         /* Old unused code
         MeshCollider audioCollider = slicedObject.AddComponent<MeshCollider>();
         audioCollider.convex = true;

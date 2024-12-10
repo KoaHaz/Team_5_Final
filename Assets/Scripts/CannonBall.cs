@@ -32,7 +32,8 @@ public class Cannonball : MonoBehaviour
             }
 
             // Destroy the cannonball
-            Destroy(gameObject);
+           // Destroy(gameObject);
         }
     }
 }
+

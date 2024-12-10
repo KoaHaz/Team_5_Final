@@ -7,8 +7,8 @@ public class RotateUnlessPlayerHit : MonoBehaviour
     public GameObject cannonballPrefab; // Prefab for the cannonball (Serialized for Unity Inspector)
     public Transform firePoint;               // Point where the cannonball spawns
     public float spinSpeed = 45f;             // Rotation speed in degrees per second
-    public float projectileSpeed = 20f;       // Speed of the fired cannonball
-    public float fireCooldown = 2f;           // Cooldown time between shots
+    public float projectileSpeed = 10f;       // Speed of the fired cannonball
+    public float fireCooldown = 3f;           // Cooldown time between shots
 
     private float lastFireTime = 0f;          // Time when the cannon last fired
 
