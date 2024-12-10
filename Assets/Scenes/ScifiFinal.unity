@@ -27652,8 +27652,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4136577714694324, guid: a4645edf24a14487aa16adbc4bf27745, type: 3}
   m_PrefabInstance: {fileID: 793597316}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1001 &793740388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27826,7 +27824,6 @@ MonoBehaviour:
   crossSectionMaterial: {fileID: 0}
   cutForce: 10
   interval: 0.5
->>>>>>> 282e3226b829239bde89149ead2c53dc8fdc0d91
 --- !u!1001 &799556413
 PrefabInstance:
   m_ObjectHideFlags: 0
