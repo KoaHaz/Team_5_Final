@@ -14,6 +14,9 @@ public class RotateUnlessPlayerHit : MonoBehaviour
     private float lastFireTime = 0f;          // Time when the cannon last fired
     private bool targetLocked = false;
 
+    public AudioSource fireSource;
+    public AudioSource explosionSource;
+
     void FixedUpdate()
     {
         // Perform a raycast from the cannon's forward direction
@@ -61,6 +64,9 @@ public class RotateUnlessPlayerHit : MonoBehaviour
         if (cannonballScript != null)
         {
             cannonballScript.SetFiringCannon(this);  // 'this' refers to the current instance of RotateUnlessPlayerHit
+
+            // Play sound when the cannon is fired
+            fireSource.Play();
         }
 
         Debug.Log("Cannonball fired!");
@@ -74,6 +80,7 @@ public class RotateUnlessPlayerHit : MonoBehaviour
             Debug.Log("Cannon hit by player weapon. Preparing to despawn...");
 
             // Optionally add effects here (e.g., explosion or sound)
+            explosionSource.Play();
 
             // Destroy the cannon after a delay
             Destroy(gameObject, despawnDelay);

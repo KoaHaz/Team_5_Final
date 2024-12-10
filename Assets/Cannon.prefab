@@ -144,7 +144,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6a4dfb97d728d804a801e24bf2cf34e5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -248,6 +248,8 @@ MonoBehaviour:
   projectileSpeed: 20
   fireCooldown: 2
   despawnDelay: 2
+  fireSource: {fileID: 8579044631915921479}
+  explosionSource: {fileID: 52721527829961132}
 --- !u!65 &907417692536575275
 BoxCollider:
   m_ObjectHideFlags: 0

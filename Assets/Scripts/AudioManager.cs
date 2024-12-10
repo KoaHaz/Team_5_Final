@@ -33,7 +33,8 @@ public class AudioManager : MonoBehaviour
     }
 
     void Start() {
-
+        Play("DreamscapeBG");
+        Play("DroneBG");
     }
 
     private void Update() {
