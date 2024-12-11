@@ -14,6 +14,8 @@ public class RotateUnlessPlayerHit : MonoBehaviour
     private float lastFireTime = 0f;          // Time when the cannon last fired
     private bool targetLocked = false;
 
+    public AudioSource fireSFX;
+
     void FixedUpdate()
     {
         // Perform a raycast from the cannon's forward direction
@@ -53,6 +55,7 @@ public class RotateUnlessPlayerHit : MonoBehaviour
         Rigidbody rb = newCannonball.GetComponent<Rigidbody>();
         if (rb != null)
         {
+            fireSFX.Play();
             rb.velocity = firePoint.forward * projectileSpeed;
         }
 

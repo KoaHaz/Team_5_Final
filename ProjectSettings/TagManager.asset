@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Right Hand
+  - Left Hand
   - PlayerWeapon
+  - Cannon
   layers:
   - Default
   - TransparentFX
@@ -13,7 +16,7 @@ TagManager:
   - Water
   - UI
   - Sliceable
-  - Mirror Environment
+  - 
   - 
   - 
   - 
