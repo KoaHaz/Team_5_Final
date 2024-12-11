@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5738356428635926053}
   m_Layer: 6
   m_Name: Cannon
-  m_TagString: Untagged
+  m_TagString: Cannon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,7 +143,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6a4dfb97d728d804a801e24bf2cf34e5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -246,6 +246,7 @@ MonoBehaviour:
   spinSpeed: 45
   projectileSpeed: 20
   fireCooldown: 2
+  fireSFX: {fileID: 8579044631915921479}
 --- !u!1 &3160925998168097574
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +261,7 @@ GameObject:
   - component: {fileID: 7490501803166715539}
   m_Layer: 6
   m_Name: Base
-  m_TagString: Untagged
+  m_TagString: Cannon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
