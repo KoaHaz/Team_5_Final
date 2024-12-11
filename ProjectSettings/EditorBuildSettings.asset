@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Practice/Base Scene 1.unity
     guid: 93c99227abf2a764182746859c4df9ed
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ScifiFinal.unity
     guid: 574ba83a1e1c25248bc4202c0f8dd9c9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ScifiFinal_2.unity
     guid: 2eb49b3a492b0e04bbd9a66e65af4504
   m_configObjects:
