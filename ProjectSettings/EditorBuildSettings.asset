@@ -8,9 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/ScifiFinal.unity
+  - enabled: 0
+    path: Assets/Scenes/ScifiFinal_Old.unity
     guid: 22a2b7d90dcda3044b4d5f8087019bcf
+  - enabled: 0
+    path: Assets/Practice/Base Scene 1.unity
+    guid: 93c99227abf2a764182746859c4df9ed
+  - enabled: 0
+    path: Assets/Scenes/ScifiFinal.unity
+    guid: 574ba83a1e1c25248bc4202c0f8dd9c9
+  - enabled: 1
+    path: Assets/Scenes/ScifiFinal_2.unity
+    guid: 2eb49b3a492b0e04bbd9a66e65af4504
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bf1b23a7aab3b404e9ed37c7b8e0ad09, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 0b6426f15617bd64498412d619950ec8, type: 2}

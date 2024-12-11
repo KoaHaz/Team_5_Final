@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Right Hand
+  - Left Hand
   - PlayerWeapon
   layers:
   - Default
@@ -13,7 +15,7 @@ TagManager:
   - Water
   - UI
   - Sliceable
-  - Mirror Environment
+  - 
   - 
   - 
   - 

@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 8579044631915921479}
   - component: {fileID: 52721527829961132}
   - component: {fileID: 5738356428635926053}
-  - component: {fileID: 907417692536575275}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +143,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6a4dfb97d728d804a801e24bf2cf34e5, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -247,30 +246,6 @@ MonoBehaviour:
   spinSpeed: 45
   projectileSpeed: 20
   fireCooldown: 2
-  despawnDelay: 2
-  fireSource: {fileID: 8579044631915921479}
-  explosionSource: {fileID: 52721527829961132}
---- !u!65 &907417692536575275
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 885006195275650601}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.5, y: 3, z: 2.5}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3160925998168097574
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +258,7 @@ GameObject:
   - component: {fileID: 502335240741770935}
   - component: {fileID: 4162577708564418904}
   - component: {fileID: 7490501803166715539}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +362,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1658275461794036770}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,7 +396,7 @@ GameObject:
   - component: {fileID: 6812787869641945620}
   - component: {fileID: 6285055466311959359}
   - component: {fileID: 2179577847284986560}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +504,7 @@ GameObject:
   - component: {fileID: 8026405740393094611}
   - component: {fileID: 1732094109175978332}
   - component: {fileID: 4413577697841535030}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RotatingOrb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -637,6 +612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: shield18
       objectReference: {fileID: 0}
+    - target: {fileID: 1648895789002692, guid: d0b085d85c1e4614d878c1e63e71bba2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4121320025275402, guid: d0b085d85c1e4614d878c1e63e71bba2, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -714,6 +693,10 @@ PrefabInstance:
     - target: {fileID: 1648895789002692, guid: d0b085d85c1e4614d878c1e63e71bba2, type: 3}
       propertyPath: m_Name
       value: shield18 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648895789002692, guid: d0b085d85c1e4614d878c1e63e71bba2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4121320025275402, guid: d0b085d85c1e4614d878c1e63e71bba2, type: 3}
       propertyPath: m_LocalScale.x
