@@ -385,7 +385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &14739007
 Transform:
   m_ObjectHideFlags: 0
@@ -2202,7 +2202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1726400950926254, guid: 212beda10a6dcbc47be50b5e25ce9ee8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4189311547703444, guid: 212beda10a6dcbc47be50b5e25ce9ee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -2341,7 +2341,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   crossSectionMaterial: {fileID: 0}
-  cutForce: 2000
+  cutForce: 10
   interval: 0.5
 --- !u!114 &62766759
 MonoBehaviour:
@@ -76977,7 +76977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1598313448379134, guid: 8141756cd06ce31479718474f0f7c48e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4409867014451924, guid: 8141756cd06ce31479718474f0f7c48e, type: 3}
       propertyPath: m_LocalScale.x
@@ -77116,7 +77116,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   crossSectionMaterial: {fileID: 0}
-  cutForce: 2000
+  cutForce: 10
   interval: 0.5
 --- !u!114 &1881179065
 MonoBehaviour:
@@ -81515,7 +81515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1992574320039886, guid: 785efd0610717844db78844af875427a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185480370786490, guid: 785efd0610717844db78844af875427a, type: 3}
       propertyPath: m_LocalScale.x
@@ -81654,7 +81654,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   crossSectionMaterial: {fileID: 0}
-  cutForce: 2000
+  cutForce: 10
   interval: 0.5
 --- !u!114 &1995317784
 MonoBehaviour:
