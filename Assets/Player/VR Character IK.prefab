@@ -860,6 +860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VR Character IK
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: cf3910b7639e12447827e45f63f60201, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 100080, guid: cf3910b7639e12447827e45f63f60201, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1042,7 +1046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: cf3910b7639e12447827e45f63f60201, type: 3}
       propertyPath: m_UpdateWhenOffscreen
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
