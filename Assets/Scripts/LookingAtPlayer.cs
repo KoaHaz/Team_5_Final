@@ -14,6 +14,8 @@ public class RotateUnlessPlayerHit : MonoBehaviour
 
     private bool targetLocked = false;
 
+    public AudioSource fireSFX;
+
     void FixedUpdate()
     {
         // Perform a raycast from the cannon's forward direction
@@ -57,6 +59,7 @@ public class RotateUnlessPlayerHit : MonoBehaviour
         Rigidbody rb = newCannonball.GetComponent<Rigidbody>();
         if (rb != null)
         {
+            fireSFX.Play();
             rb.velocity = firePoint.forward * projectileSpeed;
         }
 

@@ -16,7 +16,7 @@ public class SlicingObjects : MonoBehaviour
     public Material crossSectionMaterial;
     public float cutForce = 2000;
     public float interval = 0.5f;
-    
+
     private float timer;
     // Start is called before the first frame update
     void Start()
@@ -50,6 +50,10 @@ public class SlicingObjects : MonoBehaviour
         planeNormal.Normalize();
 
         SlicedHull hull = target.Slice(endSlicePoint.position, planeNormal);
+
+        if (target.tag == "Cannon") {
+            FindObjectOfType<AudioManager>().Play("ExplosionSFX");
+        }
 
         if (hull != null)
         {
